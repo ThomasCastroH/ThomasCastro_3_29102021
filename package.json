@@ -1,0 +1,15 @@
+{
+  "name": "p3_thomas_castro",
+  "version": "1.0.0",
+  "description": "Projet 3 formation Dev Front-End",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThomasCastroH/ThomasCastro_3_29102021"
+  },
+  "author": "Thomas Castro",
+  "license": "ISC"
+}
