@@ -95,7 +95,7 @@
     h5{
         position: relative;
         left: 95%;
-        bottom: 50%;
+        bottom: 55%;
         width: 5px;
     }
     &__order{
@@ -109,13 +109,14 @@
     }
     @media screen and (min-width: 1440px) {
         &__wrapper{
+            width: 95%;
             display: flex;
             justify-content: space-between;
-            margin-left: -4%;
         }
         &__part{
             width: 100%;
             min-width: 400px;
+            max-width: 95%;
         }
         &__order{
             height: 8rem;
@@ -135,6 +136,8 @@ footer{
 .list{
     list-style: none;
     height: 12rem;
+    display: flex;
+    flex-direction: column;
     &__item{
         display: flex;
         align-items: center;
@@ -150,5 +153,9 @@ footer{
     }
     .fa-hands-helping, .fa-utensils{
         width: 1rem;
+    }
+    @media screen and (min-width: 800px) {
+        text-align: center;
+        align-items: center;
     }
 }

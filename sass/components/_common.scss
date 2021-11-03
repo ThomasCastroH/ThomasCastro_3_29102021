@@ -27,4 +27,7 @@ a.btn{
     color: white;
     font-weight: bold;
     @include box-shadow;
+    &:hover{
+        filter: brightness(1.1);
+    }
 }

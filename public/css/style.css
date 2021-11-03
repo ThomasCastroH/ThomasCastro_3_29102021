@@ -29,6 +29,9 @@ a.btn {
   font-weight: bold;
   box-shadow: 0px 5px 10px #dddddd;
 }
+a.btn:hover {
+  filter: brightness(1.1);
+}
 
 .header {
   width: 100%;
@@ -84,7 +87,7 @@ a.btn {
 }
 .menu h1 {
   padding-top: 2rem;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 .menu__header__logo {
   position: absolute;
@@ -94,7 +97,7 @@ a.btn {
 }
 .menu__part {
   padding-top: 2rem;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 .menu__part h4 {
   position: relative;
@@ -132,7 +135,7 @@ a.btn {
 .menu h5 {
   position: relative;
   left: 95%;
-  bottom: 50%;
+  bottom: 55%;
   width: 5px;
 }
 .menu__order {
@@ -146,13 +149,14 @@ a.btn {
 }
 @media screen and (min-width: 1440px) {
   .menu__wrapper {
+    width: 95%;
     display: flex;
     justify-content: space-between;
-    margin-left: -4%;
   }
   .menu__part {
     width: 100%;
     min-width: 400px;
+    max-width: 95%;
   }
   .menu__order {
     height: 8rem;
@@ -171,6 +175,8 @@ footer {
 .list {
   list-style: none;
   height: 12rem;
+  display: flex;
+  flex-direction: column;
 }
 .list__item {
   display: flex;
@@ -187,6 +193,12 @@ footer {
 }
 .list .fa-hands-helping, .list .fa-utensils {
   width: 1rem;
+}
+@media screen and (min-width: 800px) {
+  .list {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
