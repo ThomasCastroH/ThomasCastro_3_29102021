@@ -1,3 +1,165 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@800&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 350px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin: 0;
+}
+
+h2, h3, h4 {
+  font-weight: bolder;
+  margin: 0;
+}
+
+a.btn {
+  text-decoration: none;
+  border-radius: 2rem;
+  background: #9356dc;
+  background: linear-gradient(348deg, #9356DC 0%, #FF79Da 100%);
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 5px 10px #dddddd;
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    height: 3.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .header__logo {
+    width: 9rem;
+    padding-top: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .banner {
+    height: 20rem;
+    width: 100%;
+  }
+  .banner__img {
+    width: 100%;
+    height: 20rem;
+  }
+  .banner img {
+    object-fit: cover;
+  }
+}
+
+.menu {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+@media screen and (max-width: 599px) {
+  .menu {
+    border-radius: 2rem 2rem 0 0;
+    position: relative;
+    top: -4rem;
+  }
+  .menu h1 {
+    padding-top: 2rem;
+    margin-left: 1rem;
+  }
+  .menu__header__logo {
+    position: absolute;
+    top: 2.5rem;
+    left: 85%;
+    transform: scale(1.8);
+  }
+  .menu__part {
+    padding-top: 2rem;
+    margin-left: 1rem;
+  }
+  .menu__part h4 {
+    position: relative;
+    font-weight: lighter;
+  }
+  .menu__part h4::before {
+    content: "";
+    position: absolute;
+    bottom: -0.2rem;
+    left: 1px;
+    width: 2.5rem;
+    height: 3px;
+    background-color: #99E2D0;
+  }
+  .menu__dish {
+    width: 90%;
+    height: 4rem;
+    background-color: white;
+    border-radius: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem 0 0.5rem;
+    box-shadow: 0px 5px 10px #dddddd;
+  }
+  .menu h3 {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+  .menu p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  .menu h5 {
+    position: relative;
+    top: -35px;
+    left: 95%;
+    width: 25px;
+  }
+  .menu__order {
+    height: 12rem;
+    width: 100%;
+    text-align: center;
+  }
+  .menu__order a {
+    position: relative;
+    top: 6rem;
+  }
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  min-width: 350px;
+  background-color: #252525;
+  color: white;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+  height: 12rem;
+}
+.list__item {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+.list__item i {
+  margin-right: 1rem;
+}
+.list img {
+  filter: invert(1);
+}
+@media screen and (max-width: 599px) {
+  .list img {
+    width: 6rem;
+    margin: 1rem 0 1rem 0;
+  }
+}
+.list .fa-hands-helping, .list .fa-utensils {
+  width: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */
