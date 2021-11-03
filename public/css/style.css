@@ -78,74 +78,84 @@ a.btn {
 .menu {
   background-color: #f2f2f2;
   width: 100%;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+  top: -4rem;
 }
-@media screen and (max-width: 1440px) {
-  .menu {
-    border-radius: 2rem 2rem 0 0;
-    position: relative;
-    top: -4rem;
-  }
-  .menu h1 {
-    padding-top: 2rem;
-    margin-left: 5%;
-  }
-  .menu__header__logo {
-    position: absolute;
-    top: 2.5rem;
-    left: 85%;
-    transform: scale(1.8);
+.menu h1 {
+  padding-top: 2rem;
+  margin-left: 5%;
+}
+.menu__header__logo {
+  position: absolute;
+  top: 2.5rem;
+  left: 85%;
+  transform: scale(1.8);
+}
+.menu__part {
+  padding-top: 2rem;
+  margin-left: 5%;
+}
+.menu__part h4 {
+  position: relative;
+  font-weight: lighter;
+}
+.menu__part h4::before {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  left: 1px;
+  width: 2.5rem;
+  height: 3px;
+  background-color: #99E2D0;
+}
+.menu__dish {
+  width: 90%;
+  max-width: 100%;
+  height: 4rem;
+  background-color: white;
+  border-radius: 1.2rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 0 3%;
+  box-shadow: 0px 5px 10px #dddddd;
+  overflow: hidden;
+}
+.menu h3 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.menu p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  width: 90%;
+}
+.menu h5 {
+  position: relative;
+  left: 95%;
+  bottom: 50%;
+  width: 5px;
+}
+.menu__order {
+  height: 12rem;
+  width: 100%;
+  text-align: center;
+}
+.menu__order a {
+  position: relative;
+  top: 6rem;
+}
+@media screen and (min-width: 1440px) {
+  .menu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -4%;
   }
   .menu__part {
-    padding-top: 2rem;
-    margin-left: 5%;
-  }
-  .menu__part h4 {
-    position: relative;
-    font-weight: lighter;
-  }
-  .menu__part h4::before {
-    content: "";
-    position: absolute;
-    bottom: -0.2rem;
-    left: 1px;
-    width: 2.5rem;
-    height: 3px;
-    background-color: #99E2D0;
-  }
-  .menu__dish {
-    width: 90%;
-    max-width: 100%;
-    height: 4rem;
-    background-color: white;
-    border-radius: 1.2rem;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem 0 3%;
-    box-shadow: 0px 5px 10px #dddddd;
-    overflow: hidden;
-  }
-  .menu h3 {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
-  .menu p {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    width: 90%;
-  }
-  .menu h5 {
-    position: relative;
-    left: 95%;
-    bottom: 50%;
-    width: 5px;
+    width: 100%;
+    min-width: 400px;
   }
   .menu__order {
-    height: 12rem;
-    width: 100%;
-    text-align: center;
-  }
-  .menu__order a {
-    position: relative;
-    top: 6rem;
+    height: 8rem;
   }
 }
 
@@ -172,12 +182,8 @@ footer {
 }
 .list img {
   filter: invert(1);
-}
-@media screen and (max-width: 1440px) {
-  .list img {
-    width: 6rem;
-    margin: 1rem 0 1rem 0;
-  }
+  width: 6rem;
+  margin: 1rem 0 1rem 0;
 }
 .list .fa-hands-helping, .list .fa-utensils {
   width: 1rem;
