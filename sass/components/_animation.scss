@@ -1,0 +1,21 @@
+@keyframes itemAppear {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.menu__dish, .restaurant__card{
+    animation: itemAppear .6s;
+    animation-timing-function: cubic-bezier(0,1.1,.68,1.04);
+    animation-fill-mode: both;
+    transform: scale(0);
+}
+
+@each $delay in $animation-delay {
+    .delay-#{$delay} {
+        animation-delay: $delay;
+    }
+}

@@ -18,7 +18,21 @@ h2, h3, h4{
     margin: 0;
 }
 
-a.btn{
+a{
+    text-decoration: none;
+    &:visited{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+p, span{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.btn{
     text-decoration: none;
     border-radius: 2rem;
     background: rgb(147,86,220);
@@ -29,5 +43,50 @@ a.btn{
     @include box-shadow;
     &:hover{
         filter: brightness(1.1);
+    }
+}
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    min-width: 320px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 0;
+}
+
+.list{
+    list-style: none;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    &__link{
+        &:hover{
+            text-decoration: underline;
+        }
+        &:visited{
+            color: white;
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        height: 2rem;
+        i{
+            margin-right: 1rem;
+        }
+    }
+    img{
+        filter: invert(1);
+        width: 6rem;
+        margin: 1rem 0 1rem 0;
+    }
+    .fa-hands-helping, .fa-utensils{
+        width: 1rem;
+    }
+    @media screen and (min-width: 800px) {
+        text-align: center;
+        align-items: center;
     }
 }

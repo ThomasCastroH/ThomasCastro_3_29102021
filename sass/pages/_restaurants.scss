@@ -1,16 +1,12 @@
-*{
-//    outline:1px solid red;
-}
-
-.header{
+.restaurant-header{
     width: 100%;
     text-align: center;
     height: 6rem;
     &__logo{
-        width: 18rem;
-        padding-top: 2rem;
+        width: 12rem;
+        padding-top: 2.5rem;
     }
-    i{
+    .fa-arrow-left{
         position: absolute;
         left: 2%;
         top: 5%;
@@ -20,13 +16,13 @@
             color: black;
         }
     }
-    @media screen and (max-width: 1439px) {
+    @media screen and (max-width: 1023px) {
         height: 3.5rem;
         &__logo{
             width: 9rem;
             padding-top: 1.2rem;
         }
-        i{
+        .fa-arrow-left{
             position: absolute;
             top: 1.5rem;
         }
@@ -80,7 +76,7 @@
         border-radius: 1.2rem;
         margin-top: 1rem;
         padding: 0.5rem 1rem 0 3%;
-        @include box-shadow;
+        @include light-box-shadow;
         overflow: hidden;
     }
     h3{
@@ -96,7 +92,7 @@
         position: relative;
         left: 95%;
         bottom: 55%;
-        width: 5px;
+        width: 25px;
     }
     &__order{
         height: 12rem;
@@ -105,9 +101,10 @@
         a{
             position: relative;
             top: 6rem;
+            color: white;
         }
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1024px) {
         &__wrapper{
             width: 95%;
             display: flex;
@@ -115,47 +112,10 @@
         }
         &__part{
             width: 100%;
-            min-width: 400px;
             max-width: 95%;
         }
         &__order{
             height: 8rem;
         }
-    }
-}
-
-footer{
-    position: absolute;
-    width: 100%;
-    min-width: 320px;
-    background-color: rgb(37, 37, 37);
-    color: white;
-    padding: 0;
-}
-
-.list{
-    list-style: none;
-    height: 12rem;
-    display: flex;
-    flex-direction: column;
-    &__item{
-        display: flex;
-        align-items: center;
-        height: 2rem;
-        i{
-            margin-right: 1rem;
-        }
-    }
-    img{
-        filter: invert(1);
-        width: 6rem;
-        margin: 1rem 0 1rem 0;
-    }
-    .fa-hands-helping, .fa-utensils{
-        width: 1rem;
-    }
-    @media screen and (min-width: 800px) {
-        text-align: center;
-        align-items: center;
     }
 }

@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="restaurant-header">
             <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
-            <img class="header__logo" src="./public/img/logo/ohmyfood.png" alt="Logo OhMyFood">
+            <img class="restaurant-header__logo" src="./public/img/logo/ohmyfood.png" alt="Logo OhMyFood">
         </div>
         <div class="banner">
             <img class="banner__img" src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
@@ -23,60 +23,62 @@
             <h1>Le délice des sens</h1>
             <i class="far fa-heart menu__header__logo"></i>
         </div>
-        <section class="menu__part">
-            <h4>ENTRÉES</h4>
-            <article class="menu__dish">
-                <h3>Tartare de thon</h3>
-                <p>Assaisonné au yuzu</p>
-                <h5>25€</h5>
-            </article>
-            <article class="menu__dish">
-                <h3>Bouchée de homard croustillant</h3>
-                <p>Et sa farandole de petits légumes</p>
-                <h5>35€</h5>
-            </article>
-            <article class="menu__dish">
-                <h3>Velouté de cèpes </h3>
-                <p>Aux truffes</p>
-                <h5>20€</h5>
-            </article>
-        </section>
-        <section class="menu__part">
-            <h4>PLATS</h4>
-            <article class="menu__dish">
-                <h3>Poulet rôti aux herbes de Provence</h3>
-                <p>Et sa crème de truffe</p>
-                <h5>40€</h5>
-            </article>
-            <article class="menu__dish">
-                <h3>Langouste rôtie </h3>
-                <p>Et ses légumes de saison</p>
-                <h5>35€</h5>
-            </article>
-            <article class="menu__dish">
-                <h3>Côte de boeuf Angus</h3>
-                <p>Et sa purée de panais</p>
-                <h5>44€</h5>
-            </article>
-        </section>
-        <section class="menu__part">
-            <h4>DESSERTS</h4>
-            <article class="menu__dish">
-                <h3>Farandole de desserts</h3>
-                <p>Du chef</p>
-                <h5>18€</h5>
-            </article>
-            <article class="menu__dish">
-                <h3>Crème brulée</h3>
-                <p>Revisitée</p>
-                <h5>22€</h5>
-            </article>
-            <article class="menu__dish">
-                <h3>Tiramisu</h3>
-                <p>À la noisette</p>
-                <h5>23€</h5>
-            </article>
-        </section>
+        <div class="menu__wrapper">
+            <section class="menu__part">
+                <h4>ENTRÉES</h4>
+                <article class="delay-0ms menu__dish">
+                    <h3>Tartare de thon</h3>
+                    <p>Assaisonné au yuzu</p>
+                    <h5>25€</h5>
+                </article>
+                <article class="delay-100ms menu__dish">
+                    <h3>Bouchée de homard croustillant</h3>
+                    <p>Et sa farandole de petits légumes</p>
+                    <h5>35€</h5>
+                </article>
+                <article class="delay-200ms menu__dish">
+                    <h3>Velouté de cèpes </h3>
+                    <p>Aux truffes</p>
+                    <h5>20€</h5>
+                </article>
+            </section>
+            <section class="menu__part">
+                <h4>PLATS</h4>
+                <article class="delay-300ms menu__dish">
+                    <h3>Poulet rôti aux herbes de Provence</h3>
+                    <p>Et sa crème de truffe</p>
+                    <h5>40€</h5>
+                </article>
+                <article class="delay-400ms menu__dish">
+                    <h3>Langouste rôtie </h3>
+                    <p>Et ses légumes de saison</p>
+                    <h5>35€</h5>
+                </article>
+                <article class="delay-500ms menu__dish">
+                    <h3>Côte de boeuf Angus</h3>
+                    <p>Et sa purée de panais</p>
+                    <h5>44€</h5>
+                </article>
+            </section>
+            <section class="menu__part">
+                <h4>DESSERTS</h4>
+                <article class="delay-600ms menu__dish">
+                    <h3>Farandole de desserts</h3>
+                    <p>Du chef</p>
+                    <h5>18€</h5>
+                </article>
+                <article class="delay-700ms menu__dish">
+                    <h3>Crème brulée</h3>
+                    <p>Revisitée</p>
+                    <h5>22€</h5>
+                </article>
+                <article class="delay-800ms menu__dish">
+                    <h3>Tiramisu</h3>
+                    <p>À la noisette</p>
+                    <h5>23€</h5>
+                </article>
+            </section>
+        </div>
         <div class="menu__order">
             <a href="#" class="btn">Commander</a>
         </div>
@@ -84,20 +86,28 @@
     <footer>
         <ul class="list">
             <img class="list__img" src="./public/img/logo/ohmyfood@2x.svg" alt="Petit logo OhMyFood">
-            <li class="list__item">
-                <i class="fas fa-utensils"></i>
-                <p>Proposer un restaurant</p>
-            </li>
-            <li class="list__item">
-                <i class="fas fa-hands-helping"></i>
-                <p>Devenir partenaire</p>
-            </li>
-            <li class="list__item">
-                <p>Mentions légales</p>
-            </li>
-            <li class="list__item">
-                <p>Contact</p>
-            </li>
+            <a class="list__link" href="#">
+                <li class="list__item">
+                    <i class="fas fa-utensils list__item__logo"></i>
+                    <p>Proposer un restaurant</p>
+                </li>
+            </a>
+            <a class="list__link" href="#">
+                <li class="list__item">
+                    <i class="fas fa-hands-helping list__item__logo"></i>
+                    <p>Devenir partenaire</p>
+                </li>
+            </a>
+            <a class="list__link" href="#">
+                <li class="list__item">
+                    <p>Mentions légales</p>
+                </li>
+            </a>
+            <a class="list__link" href="#">
+                <li class="list__item">
+                    <p>Contact</p>
+                </li>
+            </a>
         </ul>
     </footer>
 </body>

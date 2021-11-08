@@ -1,5 +1,9 @@
 @mixin box-shadow {
-    box-shadow: 0px 5px 10px rgb(221, 221, 221);
+    box-shadow: 0px 3px 10px rgb(114, 102, 107);
+}
+
+@mixin light-box-shadow {
+    box-shadow: 0px 2px 10px #d5d5d5;
 }
 
 @mixin menu-margin {
