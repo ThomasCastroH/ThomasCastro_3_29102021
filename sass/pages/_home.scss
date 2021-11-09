@@ -93,7 +93,7 @@
             left: -0.5rem;
         }
         &:hover{
-            color: $color-pirmary;
+            color: $color-primary;
             background-color: hsl(307, 39%, 90%);
         }
         &__text{
@@ -105,9 +105,14 @@
     }
     @media screen and (min-width: 1024px) {
         height: 10rem;
+        h2{
+            margin-left: 10%;
+        }
         ol{
             margin-left: 3%;
             display: flex;
+            width: 80%;
+            margin-left: 10%;
         }
         &__description{
             margin: 0 0 0 2rem;
@@ -140,6 +145,7 @@
         &__symbol{
             font-size: 0.85rem ;
             background-color: #99e2d0;
+            border: 1px solid #1b6150;
             color: #1b6150;
             padding: 0.4rem 0.7rem 0.4rem 0.7rem;
             border-radius: 0.25rem;
@@ -167,11 +173,16 @@
         }
     }
     @media screen and (min-width: 1024px) {
+        h2{
+            margin-left: 10%;
+        }
         &__container {
             display: grid;
             grid-template-columns: repeat(2,1fr);
             column-gap: 2rem ;
             row-gap: 2rem;
+            width: 80%;
+            margin-left: 10%;
         }
         &__card{
             &__image {

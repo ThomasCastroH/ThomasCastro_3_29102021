@@ -51,11 +51,12 @@
         @include menu-margin;
     }
     &__header{
+        position: relative;
         &__logo{
             position: absolute;
             top: 2.5rem;
-            left: 85%;
-            transform: scale(1.8);
+            left: 90%;
+            transform: scale(2);
         }
     }
     &__part{
@@ -72,12 +73,25 @@
         width: 90%;
         max-width: 100%;
         height: 4rem;
+        display: flex;
+        justify-content: space-between;
         background-color: white;
         border-radius: 1.2rem;
         margin-top: 1rem;
         padding: 0.5rem 1rem 0 3%;
         @include light-box-shadow;
         overflow: hidden;
+        text-overflow: ellipsis;
+        &__content {
+            width: 80%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            p, h3 {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
     }
     h3{
         font-size: 1rem;
@@ -89,10 +103,7 @@
         width: 90%;
     }
     h5{
-        position: relative;
-        left: 95%;
-        bottom: 55%;
-        width: 25px;
+        margin-left: 1rem;
     }
     &__order{
         height: 12rem;
@@ -104,6 +115,7 @@
             color: white;
         }
     }
+
     @media screen and (min-width: 1024px) {
         &__wrapper{
             width: 95%;

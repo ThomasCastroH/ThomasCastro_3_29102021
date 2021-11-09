@@ -27,12 +27,6 @@ a:visited {
   color: black;
 }
 
-p, span {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 .btn {
   text-decoration: none;
   border-radius: 2rem;
@@ -47,6 +41,10 @@ p, span {
   filter: brightness(1.1);
 }
 
+input {
+  display: none;
+}
+
 footer {
   position: absolute;
   width: 100%;
@@ -57,6 +55,7 @@ footer {
 }
 
 .list {
+  color: white;
   list-style: none;
   height: 12rem;
   display: flex;
@@ -91,16 +90,32 @@ footer {
   }
 }
 
-@keyframes itemAppear {
-  from {
-    transform: scale(0);
+@keyframes dishAppear {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0%;
   }
-  to {
-    transform: scale(1);
+  25% {
+    opacity: 5%;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
+}
+@keyframes checked {
+  0% {
+    transform: rotateZ(100deg) scale(1.6);
+  }
+  50% {
+    transform: rotateZ(-30deg) scale(1.6);
+  }
+  100% {
+    transform: rotateZ(0deg) scale(1.6);
   }
 }
 .menu__dish, .restaurant__card {
-  animation: itemAppear 0.6s;
+  animation: dishAppear 0.6s;
   animation-timing-function: cubic-bezier(0, 1.1, 0.68, 1.04);
   animation-fill-mode: both;
   transform: scale(0);
@@ -148,6 +163,42 @@ footer {
 
 .delay-1000ms {
   animation-delay: 1000ms;
+}
+
+.menu__dish__selected {
+  background-color: #99E2D0;
+  width: 0;
+  margin-top: -0.5rem;
+  margin-right: -1rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.4s ease-in-out;
+}
+.menu__dish__selected__icon {
+  transform: scale(1.6);
+  filter: invert(1);
+}
+input:checked ~ .menu__dish__selected {
+  width: 5rem;
+}
+input:checked ~ .menu__dish__selected i {
+  transform: scale(1.6);
+  animation: checked 1s ease-in-out;
+}
+
+.menu__header__logo--filled {
+  background: linear-gradient(#FF79Da, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.menu__header__logo--filled:hover {
+  opacity: 100%;
+  transform: scale(2.3);
+  transition: all 0.3s ease-in-out;
 }
 
 .header {
@@ -260,9 +311,14 @@ footer {
   .functionality {
     height: 10rem;
   }
+  .functionality h2 {
+    margin-left: 10%;
+  }
   .functionality ol {
     margin-left: 3%;
     display: flex;
+    width: 80%;
+    margin-left: 10%;
   }
   .functionality__description {
     margin: 0 0 0 2rem;
@@ -296,6 +352,7 @@ footer {
 .restaurant__card__symbol {
   font-size: 0.85rem;
   background-color: #99e2d0;
+  border: 1px solid #1b6150;
   color: #1b6150;
   padding: 0.4rem 0.7rem 0.4rem 0.7rem;
   border-radius: 0.25rem;
@@ -322,11 +379,16 @@ footer {
   width: 2rem;
 }
 @media screen and (min-width: 1024px) {
+  .restaurant h2 {
+    margin-left: 10%;
+  }
   .restaurant__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;
+    width: 80%;
+    margin-left: 10%;
   }
   .restaurant__card__image {
     height: 16rem;
@@ -389,11 +451,14 @@ footer {
   padding-top: 2rem;
   margin-left: 3%;
 }
+.menu__header {
+  position: relative;
+}
 .menu__header__logo {
   position: absolute;
   top: 2.5rem;
-  left: 85%;
-  transform: scale(1.8);
+  left: 90%;
+  transform: scale(2);
 }
 .menu__part {
   padding-top: 2rem;
@@ -416,11 +481,24 @@ footer {
   width: 90%;
   max-width: 100%;
   height: 4rem;
+  display: flex;
+  justify-content: space-between;
   background-color: white;
   border-radius: 1.2rem;
   margin-top: 1rem;
   padding: 0.5rem 1rem 0 3%;
   box-shadow: 0px 2px 10px #d5d5d5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__dish__content {
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__dish__content p, .menu__dish__content h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 .menu h3 {
@@ -433,10 +511,7 @@ footer {
   width: 90%;
 }
 .menu h5 {
-  position: relative;
-  left: 95%;
-  bottom: 55%;
-  width: 25px;
+  margin-left: 1rem;
 }
 .menu__order {
   height: 12rem;

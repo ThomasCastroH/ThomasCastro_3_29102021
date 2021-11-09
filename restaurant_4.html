@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OhMyFood - Le délice des sens</title>
+    <title>OhMyFood - À la française</title>
 </head>
 <body>
     <header>
@@ -20,63 +20,118 @@
     </header>
     <main class="menu">
         <div class="menu__header">
-            <h1>Le délice des sens</h1>
-            <i class="far fa-heart menu__header__logo"></i>
+            <h1>À la française</h1>
+            <i class="far fa-heart menu__header__logo menu__header__logo--empty"></i>
+            <i class="fas fa-heart menu__header__logo menu__header__logo--filled"></i>
         </div>
         <div class="menu__wrapper">
             <section class="menu__part">
                 <h4>ENTRÉES</h4>
-                <article class="delay-0ms menu__dish">
-                    <h3>Tartare de thon</h3>
-                    <p>Assaisonné au yuzu</p>
+                <label class="delay-0ms menu__dish" for="appetizer1">
+                    <input type="radio" id="appetizer1" name="appetizer" value="1">
+                    <div class="menu__dish__content">
+                        <h3>Tartare de thon</h3>
+                        <p>Assaisonné au yuzu</p>
+                    </div>
                     <h5>25€</h5>
-                </article>
-                <article class="delay-100ms menu__dish">
-                    <h3>Bouchée de homard croustillant</h3>
-                    <p>Et sa farandole de petits légumes</p>
+                    <div class="menu__dish__selected">
+                        <i class="fas fa-check-circle menu__dish__selected__icon"></i>
+                    </div>
+                </label>
+                <label class="delay-100ms menu__dish" for="appetizer2">
+                    <input type="radio" id="appetizer2" name="appetizer" value="2">
+                    <div class="menu__dish__content">
+                        <h3>Bouchée de homard croustillant </h3>
+                        <p>Et sa farandole de petits légumes</p>
+                    </div>
                     <h5>35€</h5>
-                </article>
-                <article class="delay-200ms menu__dish">
-                    <h3>Velouté de cèpes </h3>
-                    <p>Aux truffes</p>
+                    <div class="menu__dish__selected">
+                        <i class="fas fa-check-circle menu__dish__selected__icon"></i>
+                    </div>
+                </label>
+                <label class="delay-200ms menu__dish" for="appetizer3">
+                    <input type="radio" id="appetizer3" name="appetizer" value="3">
+                    <div class="menu__dish__content">
+                        <h3>Velouté de cèpes</h3>
+                        <p>Aux truffes</p>
+                    </div>
                     <h5>20€</h5>
-                </article>
+                    <div class="menu__dish__selected">
+                        <i class="fas fa-check-circle menu__dish__selected__icon"></i>
+                    </div>
+                </label>
             </section>
             <section class="menu__part">
                 <h4>PLATS</h4>
-                <article class="delay-300ms menu__dish">
-                    <h3>Poulet rôti aux herbes de Provence</h3>
-                    <p>Et sa crème de truffe</p>
+                <label class="delay-300ms menu__dish" for="main-dish1">
+                    <input type="radio" id="main-dish1" name="main-dish" value="1">
+                    <div class="menu__dish__content">
+                        <h3>Poulet rôti aux herbes de Provence</h3>
+                        <p>Et sa crème de truffe</p>
+                    </div>
                     <h5>40€</h5>
-                </article>
-                <article class="delay-400ms menu__dish">
-                    <h3>Langouste rôtie </h3>
-                    <p>Et ses légumes de saison</p>
+                    <div class="menu__dish__selected">
+                        <i class="fas fa-check-circle menu__dish__selected__icon"></i>
+                    </div>
+                </label>
+                <label class="delay-400ms menu__dish" for="main-dish2">
+                    <input type="radio" id="main-dish2" name="main-dish" value="2">
+                    <div class="menu__dish__content">
+                        <h3>Langouste rôtie</h3>
+                        <p>Et ses légumes de saison</p>
+                    </div>
                     <h5>35€</h5>
-                </article>
-                <article class="delay-500ms menu__dish">
-                    <h3>Côte de boeuf Angus</h3>
-                    <p>Et sa purée de panais</p>
+                    <div class="menu__dish__selected">
+                        <i class="fas fa-check-circle menu__dish__selected__icon"></i>
+                    </div>
+                </label>
+                <label class="delay-500ms menu__dish" for="main-dish3">
+                    <input type="radio" id="main-dish3" name="main-dish" value="3">
+                    <div class="menu__dish__content">
+                        <h3>Côte de boeuf Angus</h3>
+                        <p>Et sa purée de panais</p>
+                    </div>
                     <h5>44€</h5>
-                </article>
+                    <div class="menu__dish__selected">
+                        <i class="fas fa-check-circle menu__dish__selected__icon"></i>
+                    </div>
+                </label>
             </section>
             <section class="menu__part">
                 <h4>DESSERTS</h4>
-                <article class="delay-600ms menu__dish">
-                    <h3>Farandole de desserts</h3>
-                    <p>Du chef</p>
+                <label class="delay-600ms menu__dish" for="dessert1">
+                    <input type="radio" id="dessert1" name="dessert" value="1">
+                    <div class="menu__dish__content">
+                        <h3>Farandole de desserts</h3>
+                        <p>Du chef</p>
+                    </div>
                     <h5>18€</h5>
-                </article>
-                <article class="delay-700ms menu__dish">
-                    <h3>Crème brulée</h3>
-                    <p>Revisitée</p>
+                    <div class="menu__dish__selected">
+                        <i class="fas fa-check-circle menu__dish__selected__icon"></i>
+                    </div>
+                </label>
+                <label class="delay-700ms menu__dish" for="dessert2">
+                    <input type="radio" id="dessert2" name="dessert" value="2">
+                    <div class="menu__dish__content">
+                        <h3>Crème brulée</h3>
+                        <p>Revisitée</p>
+                    </div>
                     <h5>22€</h5>
-                </article>
-                <article class="delay-800ms menu__dish">
-                    <h3>Tiramisu</h3>
-                    <p>À la noisette</p>
+                    <div class="menu__dish__selected">
+                        <i class="fas fa-check-circle menu__dish__selected__icon"></i>
+                    </div>
+                </label>
+                <label class="delay-800ms menu__dish" for="dessert3">
+                    <input type="radio" id="dessert3" name="dessert" value="2">
+                    <div class="menu__dish__content">
+                        <h3>Tiramisu</h3>
+                        <p>À la noisette</p>
+                    </div>
                     <h5>23€</h5>
-                </article>
+                    <div class="menu__dish__selected">
+                        <i class="fas fa-check-circle menu__dish__selected__icon"></i>
+                    </div>
+                </label>
             </section>
         </div>
         <div class="menu__order">
