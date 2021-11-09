@@ -458,7 +458,7 @@ input:checked ~ .menu__dish__selected i {
   position: absolute;
   top: 2.5rem;
   left: 90%;
-  transform: scale(2);
+  transform: scale(1.5);
 }
 .menu__part {
   padding-top: 2rem;
