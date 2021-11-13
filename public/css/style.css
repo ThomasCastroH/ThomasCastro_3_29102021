@@ -307,7 +307,7 @@ input:checked ~ .menu__dish__selected i {
 .loader {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 200%;
   top: 0;
   left: 0;
   background-color: #f6f6f6;
@@ -330,7 +330,7 @@ input:checked ~ .menu__dish__selected i {
   position: relative;
   width: 12px;
   height: 12px;
-  top: 50%;
+  top: 25%;
   left: 50%;
   border-radius: 12px;
   -webkit-animation: loaderMid 3s ease-in-out infinite;
