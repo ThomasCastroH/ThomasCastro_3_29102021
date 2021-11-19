@@ -54,6 +54,9 @@
             filter: invert(1);
         }
     }
+    input {
+        display: none;
+    }
     input:checked ~ &__selected {
         width: 5rem;
         i {

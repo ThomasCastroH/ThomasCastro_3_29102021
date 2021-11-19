@@ -13,7 +13,7 @@ h1{
     margin: 0;
 }
 
-h2, h3, h4{
+h2, h4{
     font-weight: bolder;
     margin: 0;
 }
@@ -41,10 +41,6 @@ a{
     }
 }
 
-input {
-    display: none;
-}
-
 footer{
     position: absolute;
     width: 100%;
@@ -55,16 +51,20 @@ footer{
 }
 
 .list{
-    color: white;
     list-style: none;
     height: 12rem;
     display: flex;
     flex-direction: column;
     &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
         &:hover{
             text-decoration: underline;
         }
         &:visited{
+            text-decoration: none;
             color: white;
         }
     }

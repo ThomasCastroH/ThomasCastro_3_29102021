@@ -86,24 +86,25 @@
             width: 80%;
             text-overflow: ellipsis;
             overflow: hidden;
-            p, h3 {
+            span {
+                width: 90%;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                float: left;
+                clear: left;
+            }
+            &__bold {
+                font-size: 1rem;
+                margin-top: 0.5rem;
+                font-weight: bolder;
+            }
+            &__thin {
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+                width: 90%;
             }
         }
-    }
-    h3{
-        font-size: 1rem;
-        margin-top: 0.5rem;
-    }
-    p{
-        font-size: 0.8rem;
-        margin-top: 0.5rem;
-        width: 90%;
-    }
-    h5{
-        margin-left: 1rem;
     }
     &__order{
         height: 12rem;
