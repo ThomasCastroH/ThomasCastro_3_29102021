@@ -129,6 +129,24 @@
 	100%{background-color: rgba(255, 255, 255, .2);}
 }
 
+@keyframes LoaderContainer {
+    0% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+    80% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+    95% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
 .loader {
 	position: absolute;
 	width: 100%;
@@ -136,9 +154,7 @@
     top: 0;
     left: 0;
     background-color: #f6f6f6;
-    opacity: 0;
-    transform: scale(0);
-    transition: opacity 0.8s 3s ease-in-out, transform 0.1s 3.8s ease-in-out;
+    animation: LoaderContainer 3s ease-in-out forwards;
     &__animation:before{
         content: "";
         position: absolute;
